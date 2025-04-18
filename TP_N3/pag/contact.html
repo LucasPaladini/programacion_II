@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Práctica Música</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<header>
+  <h1>Vehiculos</h1>
+</header>
+<div class="container">
+  <!-- Navegación / contenedor izquierdo-->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor principal-->
+  <main>
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td><input type="text" id="nombre" name="nombre" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="edad">Edad:</label></td>
+          <td><input type="number" id="edad" name="edad"></td>
+        </tr>
+        <tr>
+          <td><label for="vehiculo">Ingrese su vehiculo:</label></td>
+          <td><input id="vehiculo" name="vehiculo"></td>
+        </tr>
+        <tr>
+          <td><label for="color">Color preferido:</label></td>
+          <td><input type="color" id="color" name="color"></td>
+        </tr>
+        <tr>
+          <td><label for="comentario">Comentario:</label></td>
+          <td><textarea id="comentario" name="comentario" rows="4" required minlength="10"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Enviar">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+
+  <!-- Contenedor secundario / Derecho-->
+  <div class="right">
+    <h2>Recomendaciones</h2>
+    <p>Seguinos en todas nuestras plataformas. Encontrarás material variado.</p>
+  </div>
+</div>
+
+<!-- Pie de página-->
+<footer>
+  <p>@ copyright labcomII.com</p>
+</footer>
+</body>
+</html>
