@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de datos personales</title>
+</head>
+<body>
+
+<h1>Formulario de datos personales</h1>
+<label for="usuario">Usuario</label>
+<input type="text" id="usuario" name="usuario" value="Estudiante" readonly>
+<br><br>
+<label for="nombre">Nombre completo</label>
+<input type="text" name="nombre" id="nombre" required>
+<br><br>
+<label for="email">Ingresa tu mail</label>
+<input type="email" name="email" id="email" required>
+<br><br>
+<label for="edad">Edad</label>
+<input type="number" name="edad" id="edad" required>
+<br><br>
+
+<label for="nacionalidad">Seleccione su nacionalidad</label>
+<select name="nacionalidad" id="nacionalidad">
+    <option value="afganistan">Afganistán</option>
+    <option value="china">China</option>
+    <option value="argentina">Argentina</option>
+    <option value="japon">Japón</option>
+    <option value="peru">Perú</option>
+    <option value="canada">Canadá</option>
+    <option value="brasil">Brasil</option>
+    <option value="italia">Italia</option>
+    <option value="australia">Australia</option>
+    <option value="sudafrica">Sudáfrica</option>
+</select>
+<br><br>
+
+<label for="ocupacion">Ocupación</label>
+<select name="ocupacion" id="ocupacion">
+    <option value="Desempleado">desempleado</option>
+    <option value="busqueda">En búsqueda laboral</option>
+    <option value="part_time">Trabajo part time</option>
+    <option value="full_time">Trabajo full time</option>
+</select>
+
+<br><br>
+
+<fieldset>
+    <h2>Gustos Personales</h2>
+    <label for="musica">Música favorita</label>
+    <input type="text" name="musica" id="musica" required>
+
+    <br><br>
+
+    <label for="comida_favorita">Comida favorita</label>
+    <select name="comida_favorita" id="comida_favorita">
+        <option value="pan">Pan</option>
+        <option value="pancho">Pancho</option>
+        <option value="paty">Paty</option>
+        <option value="pizza">Pizza</option>
+    </select>
+
+    <br><br>
+    <label for="recordar">
+    </label><input type="checkbox" name="recordar" id="recordar"> Recordar mis datos
+
+    <br><br>
+    <input type="submit" value="Enviar">
+</fieldset>
+
+
+</body>
+</html>
