@@ -88,3 +88,11 @@ form input[type="button"]{
 form input[type="button"]:hover{
     cursor:pointer;
 }
+
+form input[type="button"]:active{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+form:hover{
+    margin: 4px;
+}
