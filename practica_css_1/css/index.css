@@ -24,7 +24,7 @@ p {
     margin-bottom: 30px;
 }
 
-li {
+ul li {
     font-family: monospace;
     font-size: 18px;
     padding: 10px;
@@ -45,7 +45,6 @@ ul {
     border: 2px solid blue;
     max-width: 40%;
     list-style-type: none;
-
 }
 
 .neuquen,
@@ -58,6 +57,6 @@ ul {
     color: green;
 }
 
-li:hover {
+ul li:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
