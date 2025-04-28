@@ -96,3 +96,73 @@ form input[type="button"]:active{
 form:hover{
     margin: 4px;
 }
+
+::-wekkit-input-placeholder{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+::-moz-placeholder{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+:ms-input-placeholder{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+::placeholder{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.drops{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.drop{
+    background: rgba(255, 255, 255, 0.06);
+    -wekbit-backdrop-filter: blur(10px);
+    backdrop-filter: 10px;
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    -webkit-transition: all 0.2 ease;
+    transition: all 0.2 ease;
+}
+
+.drop-1{
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: 40px;
+    z-index: -1;
+}
+
+.drops-2{
+    height: 80px;
+    width: 80px;
+    bottom: -30px;
+    right: -10px;
+}
+
+.drops-3{
+    height: 80px;
+    width: 80px;
+    top: -30px;
+    right: -10px
+}
+
