@@ -13,7 +13,7 @@ body {
 
 nav {
     width: 100%;
-    background-color: #007700;
+    background-color: #1E1E2F;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -42,10 +42,26 @@ nav {
     transition: color 0.5s ease;
 }
 
-.nav-item:hover {
-    color: red;
-}
-
 .nav-item:hover a {
     color: gray;
+}
+
+.nav-item-login a {
+    color: white;
+    transition: all 0.5s ease;
+    background-color: red;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav-item-login a:hover {
+    background-color: #950606;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
