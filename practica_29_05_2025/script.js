@@ -35,8 +35,16 @@
         let fecha = new Date();
         let actual = fecha.toLocaleString()
         document.getElementById('fecha').textContent = "Fecha actual: " + actual;
-
     }
 
 
     // Ejer 5
+
+    // Ejer 6
+
+    function mostrarMensaje() {
+        let mensaje = document.getElementById("ingresar_texto").value;
+        alert(mensaje);
+    }
+
+    // Ejer 6
