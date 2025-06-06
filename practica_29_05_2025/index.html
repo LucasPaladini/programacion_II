@@ -6,63 +6,151 @@
 </head>
 
 <body>
-<form id="Formulario">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
-    <button type="submit">Enviar</button>
-</form>
 
-<!-- Ejer ocultar -->
+<ol>
+        <!-- Ejer formulario -->
+    <li>
+        <form id="Formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <button type="submit">Enviar</button>
+        </form>
+    </li>
 
-<div id="contenedor">
-    <h1 id="titulo">Formulario programación 2 Ocultar</h1>
-</div>
-<button type="button" onclick="botonOcultar();" id="botonOscurecer">Ocultar</button>
+        <!-- Ejer formulario -->
+
+        <!-- Ejer ocultar -->
+
+        <div id="contenedor">
+            <h3 id="titulo">Formulario programación 2 Ocultar</h3>
+        </div>
+    <li>
+        <button type="button" onclick="botonOcultar();" id="botonOscurecer">Ocultar</button>
+    </li><br>
+
+        <!-- Ejer ocultar -->
+
+        <!-- Ejer color -->
+
+    <li>
+        <form id="Formulario color">
+            <input type="color" onchange="cambiarColor()" id="color" name="color">
+        </form>
+        <br>
+    </li>
+
+        <!-- Ejer color -->
+
+        <!-- Ejer 4 -->
+
+    <li>
+        <div>
+            <button type="button" onclick="contadorClics();">Contador de clics</button>
+            <p id="contador" style="display: inline;">Clics: 0</p>
+        </div><br>
+    </li>
+
+        <!-- Ejer 4 -->
+
+        <!-- Ejer 5 -->
+
+    <li>
+        <div>
+            <button type="button" onclick="mostrarFecha();">Mostrar fecha</button>
+            <p id="fecha" style="display: inline;">Fecha: No consultado</p>
+        </div><br>
+    </li>
+
+        <!-- Ejer 5-->
+
+        <!-- Ejer 6 -->
+
+    <li>
+        <form id="Formulario_ingreso">
+            <label for="ingresar_texto">Ingresar un texto: </label>
+            <input type="text" id="ingresar_texto">
+            <button type="submit" onclick="mostrarMensaje();" >Enviar mensaje</button>
+        </form>
+        <br>
+    </li>
+
+        <!-- Ejer 6 -->
+
+        <!-- Ejer 7 -->
+
+    <li>
+        <form id="formulario_bienvenida">
+            <label for="bienvenida">Ingresa tu nombre: </label>
+            <input type="text" id="bienvenida">
+            <button type="submit" onclick="mostrarBienvenida();" >Enviar</button>
+        </form><br>
+    </li>
+
+        <!-- Ejer 7 -->
+
+        <!-- Ejer 8 -->
+
+    <li>
+        <main>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+    </li><br>
 
 
-<!-- Ejer ocultar -->
+        <!-- Ejer 8 -->
 
-<!-- Ejer color -->
+        <!-- Ejer 9 -->
 
-<br> <br>
-<form id="Formulario color">
-    <input type="color" onchange="cambiarColor()" id="color" name="color">
-</form>
-<br>
+    <li>
 
-<!-- Ejer color -->
+        <form>
+            <label for="medida">Selecciona el tamaño de fuente: </label>
+            <select id="medida" onchange="cambiarMedidaFuente()">
+                <option value="8px">Chico :(</option>
+                <option value="15px">Normal :/</option>
+                <option value="30px">Grande :O</option>
+            </select>
+        </form>
 
-<!-- Ejer 4 -->
+        <p id="texto"># Soy un texto modificable #</p>
 
-<div>
-    <button type="button" onclick="contadorClics();">Contador de clics</button>
-    <p id="contador" style="display: inline;">Clics: 0</p>
-</div>
-<br>
+    </li>
 
-<!-- Ejer 4 -->
+        <!-- Ejer 9 -->
 
-<!-- Ejer 5 -->
-
-<div>
-    <button type="button" onclick="mostrarFecha();">Mostrar fecha</button>
-    <p id="fecha" style="display: inline;">Fecha: No consultado</p>
-</div>
-<br>
-
-<!-- Ejer 5-->
-
-<!-- Ejer 6 -->
-
-<form id="Formulario_ingreso">
-    <label for="ingresar_texto">Ingresar un texto: </label>
-    <input type="text" id="ingresar_texto">
-    <button type="submit" onclick="mostrarMensaje();" >Enviar mensaje</button>
-</form>
-<br>
+        <!-- Ejer 10 -->
 
 
-<!-- Ejer 6 -->
+
+        <!-- Ejer 10 -->
+
+
+
+
+
+        <!-- Ejer 10 -->
+
+        <!-- Ejer 10 -->
+
+
+
+
+
+
+
+
+
+</ol>
+
+
+
+
+
+
 
 <script src="script.js" defer></script>
 </body>

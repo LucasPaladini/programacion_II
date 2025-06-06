@@ -48,3 +48,23 @@
     }
 
     // Ejer 6
+
+    // Ejer 7
+
+    function mostrarBienvenida() {
+        let nombre = document.getElementById('bienvenida').value;
+        alert("Bienvenido "+ nombre + "!!!");
+    }
+
+    // Ejer 7
+
+    // Ejer 9
+
+    function cambiarMedidaFuente() {
+        let medida = document.getElementById("medida").value;
+        let texto = document.getElementById("texto");
+        texto.style.fontSize = medida;
+    }
+
+
+    // Ejer 9
