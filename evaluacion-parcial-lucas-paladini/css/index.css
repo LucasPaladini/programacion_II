@@ -1,0 +1,64 @@
+*{
+    font-family: Verdana;
+    color: rgb(71, 71, 71);
+    font-size: small;
+}
+
+.cabecera {
+    display: grid;
+    grid-template-rows: 200px auto;
+    background-color: rgb(60, 66, 95);
+    color: white;
+}
+
+.profile-picture {
+    display: grid;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.presentacion {
+    background-color: white;
+    margin: 2%;
+    color: rgb(92, 92, 92);
+    padding: 2%;
+    border-radius: 2em;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.datos-personales {
+    background: #d1d0d0;
+    padding: 1%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 2em;
+}
+
+.date {
+    color: gray;
+    font-size: small;
+}
+
+h3 {
+    background-color: rgb(183, 176, 189);
+    padding: 2px;
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: rgb(60, 66, 95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

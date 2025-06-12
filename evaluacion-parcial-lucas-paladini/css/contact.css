@@ -1,0 +1,28 @@
+.datos-personales {
+
+}
+
+.contenido {
+
+    grid-template-columns: repeat(2, 100px);
+    grid-template-areas:
+    "header header"
+    "main" "main-2"
+    "main" "main-3"
+    "footer";
+}
+
+.item-a {grid-area: header;}
+.item-b {grid-area: main;}
+.item-c {grid-area: main-2;}
+.item-d {grid-area: main-3;}
+.item-e {grid-area: footer;}
+
+
+.items{
+    background: #d1d0d0;
+    border: 10px solid #d1d0d0;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
