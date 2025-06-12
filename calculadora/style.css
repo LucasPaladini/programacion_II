@@ -1,0 +1,49 @@
+#calculadora {
+    display: grid;
+    grid-template-rows: 200px auto;
+    border-radius: 25px;
+    height: 530px;
+    width: 350px;
+    padding: 20px;
+    margin: 0px auto;
+    background-color: #2980b9;
+    justify-self:center;
+    align-self: center;
+}
+
+#hola{
+    display: grid;
+
+}
+
+#campoDeTexto{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+
+#botonera{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-self: center;
+}
+
+#botonera div button{
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    background-color: aqua;
+}
+
+#resultado{
+    display: block;
+    text-align: right;
+    margin-bottom: 50px;
+    font-size: 40px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 25px;
+}
