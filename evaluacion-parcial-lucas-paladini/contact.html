@@ -1,41 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
     <link rel="stylesheet" href="css/contact.css">
 </head>
+
 <body>
 
 <div class="container">
-    <div class="item-titulo">Datos Personales</div>
+    <form id="formulario_bienvenida">
+        <div>
+            <label for="bienvenida">Nombre: </label><br>
+            <input type="text" id="bienvenida" required placeholder="Ingresa tu nombre" class="input">
+        </div><br>
+        <div>
+            <label for="Mail">E-mail: </label><br>
+            <input type="email" id="Mail" required placeholder="Ingresa tu E-Mail" class="input">
+        </div><br>
+        <div>
+            <label for="Subject">Subject: </label><br>
+            <input type="text" id="Subject" required placeholder="Ingresa subject.." class="input">
+        </div><br>
+        <div>
+            <label for="Mensaje">Mensaje: </label><br>
+            <textarea id="Mensaje" required class="input-mensaje" ></textarea>
+        </div><br>
 
-    <div class="item-linkedin">
-        <p class="">Linkedin: <br>/https://www.linkedin.com/juana-perez/</p>
-    </div>
+        <input type="submit" value="Enviar" class="boton-enviar"><br><br>
+        <button class="boton-volver" onclick="window.location.href='index.html'">Volver</button>
 
-    <div class="item-fecha">
-        <p class="item-fecha">Ene 2020 - Presente</p>
-        <p class="item-fecha">Dirección: San Martin 123, Rosario, Santa Fe </p>
-    </div>
-
-    <div class="item-telefono">Teléfono +54 341 4569896 </div>
-
-    <div class="item-email">
-        <p class="item-email">E-mail</p>
-        juanaperez@mail.com
-    </div>
-
-    <div class="item-nacimiento">
-        <p class="nacimiento">Nacimiento</p>
-        1/2/1990
-    </div>
-
-    <div class="item-nacionalidad">
-        <p class="title">Nacionalidad: </p>
-        Argentina
-    </div>
+    </form><br>
 </div>
+
 
 </body>
 </html>

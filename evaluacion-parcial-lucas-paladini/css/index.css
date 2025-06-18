@@ -5,17 +5,15 @@
 }
 
 .cabecera {
-    display: grid;
-    grid-template-rows: 200px auto;
+    display: flex;
     background-color: rgb(60, 66, 95);
     color: white;
 }
 
 .profile-picture {
-    display: grid;
     height: 150px;
-    width: auto;
     border-radius: 50%;
+    padding: 1%;
 }
 
 .presentacion {
@@ -62,3 +60,84 @@ h3 {
     cursor: pointer;
 }
 
+
+
+.datos-personales {
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "header header"
+        "main main-2"
+        "main main-3"
+        "main main-4"
+        "main main-5"
+        "main main-6"
+        "main main-7";
+    gap: 10px;
+}
+
+.item-titulo {
+    grid-area: header;
+    text-align: left;
+    color: white;
+    background-color: #2980b9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-linkedin {
+    grid-area: main;
+    background: #b5e0cf;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item-direccion {
+    grid-area: main-2;
+    background: #d1d0d0;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-telefono {
+    grid-area: main-3;
+    background: #d1d0d0;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-email {
+    grid-area: main-4;
+    background: #d1d0d0;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-nacimiento {
+    grid-area: main-5;
+    background: #d1d0d0;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-nacionalidad {
+    grid-area: main-6;
+    background: #d1d0d0;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item-subrayado {
+    text-decoration: underline;
+}

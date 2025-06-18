@@ -1,78 +1,49 @@
-.datos-personales {
-}
-
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas:
-        "header header"
-        "main main-2"
-        "main main-3"
-        "main main-4"
-        "main main-5"
-        "main main-6"
-        "main main-7";
-    gap: 10px;
-}
-
-.item-titulo {
-    grid-area: header;
-    grid-column: span 2;
-    text-align: center;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-}
-
-.item-linkedin {
-    grid-area: main;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
+    background: #e6e6e6;
     padding: 10px;
-    text-align: left;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 800px;
 }
 
-.item-fecha {
-    grid-area: main-2;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
-    text-align: center;
-}
-
-.item-telefono {
-    grid-area: main-3;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
-    text-align: center;
-}
-
-.item-email {
-    grid-area: main-4;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
-    text-align: center;
-}
-
-.item-nacimiento {
-    grid-area: main-5;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 40px;
     padding: 10px;
-    text-align: center;
 }
 
-.item-nacionalidad {
-    grid-area: main-6;
-    background: #d1d0d0;
-    border: 10px solid #d1d0d0;
-    padding: 10px;
-    text-align: center;
+.input-mensaje {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100px;
 }
 
+.boton-enviar {
+    width: 100%;
+    min-height: 40px;
+    background-color: #524C9E;
+    color: white;
+}
 
+.boton-enviar:hover {
+    background-color: #9D81A2;
+}
 
+.boton-enviar:active {
+    background-color: red;
+}
 
-.item-4 { grid-area: main-3; }
-.item-5 { grid-area: main-4; }
-.item-6 { grid-area: main-5; }
-.item-7 { grid-area: main-6; }
-.item-8 { grid-area: main-7; }
+.boton-volver {
+    width: 100%;
+    min-height: 40px;
+    background-color: #5D81A2;
+}
+
+.boton-volver:hover {
+    background-color: #9D81A2;
+}
+
+.boton-volver:active {
+    background-color: red;
+}
