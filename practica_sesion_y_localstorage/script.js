@@ -115,34 +115,49 @@ function mostrarMensaje() {
 mostrarMensaje()
 
 
+function guardarProducto() {
+    let producto = document.getElementById("producto").value;
+    localStorage.setItem("producto", producto)
+    let productoLocalStorage = localStorage.getItem("producto");
+    if (productoLocalStorage === "") {
+        alert("Ingresa una producto");
+    }
+
+    else {let nuevaLista = document.createElement("li");
+        nuevaLista.innerText = productoLocalStorage;
+
+        let lista = document.getElementById("listaProductos");
+        lista.appendChild(nuevaLista);
+        document.getElementById("producto").value = "";
+
+    }
+}
 
 
+function mostrarUltimaVisita() {
+    let ultimaVisita = new Date().toLocaleString();
+    localStorage.setItem("ultimaVisita", ultimaVisita);
+    document.getElementById("ultimaVisita").innerText = localStorage.getItem("ultimaVisita")
+}
+mostrarUltimaVisita();
 
 
+function guardarFormulario() {
+    let auto = document.getElementById("auto").value;
+    let color = document.getElementById("colorAuto").value;
 
+    localStorage.setItem("autoIngresado", auto);
+    localStorage.setItem("colorAuto", color);
 
-// function ingresarUsuarios(){
-//     let nombre = prompt("Ingresar nombres de usuarios");
-//     listaNombres.push(nombre);
-//
-//     if (nombre.length < 1) {
-//         alert("El nombre no puede estar vacío.");
-//     } else {
-//         localStorage.setItem("Nombres", listaNombres);
-//     };
-// };
+    mostrarFormulario()
+}
 
-// function mostrarStorage(){
-//     let obtenerLocalStorage = localStorage.getItem("Nombres");
-//     let newArray = obtenerLocalStorage.split(",")
-//
-//     let nombres = document.getElementById("contenedorNombres");
-//     nombres.innerHTML = "";
-//     for (let vuelta = 0;vuelta < newArray.length; vuelta++) {
-//         nombres.innerHTML += newArray[vuelta] + "<br>";
-//     }
-// };
-//
+function mostrarFormulario() {
+    document.getElementById("auto").value = localStorage.getItem("autoIngresado");
+    document.getElementById("colorAuto").value = localStorage.getItem("colorAuto");
+}
+mostrarFormulario();
+
 
 
 
