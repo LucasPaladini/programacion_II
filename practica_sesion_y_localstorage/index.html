@@ -49,11 +49,26 @@
 
 <h2> Notas: </h2>
 <div>
-    <label for=nombre>Ingresa notas: </label>
+    <label for=nombre>Ingresa una nota: </label>
     <input type="text" id="nuevaNota" placeholder="Ingresa una nota "> <br> <br>
-    <input type="button" onclick="guardarNotas()" value="Guardar notas">
+    <input type="button" onclick="guardarNota()" value="Guardar nota">
+    <input type="button" onclick="mostrarNota()" value="Mostrar nota">
     <p id="campoNotas"></p>
-</div>
+</div> <hr>
+
+<label> <br>
+    <input type="checkbox" id="casillaCheckbox" onchange="verificarCheckbox()">
+    Acepto los términos
+</label> <br><br><hr>
+
+<div>
+    <label> Ingresa un mensaje de bienvenida: </label>
+    <input type="text" id="mensaje" placeholder="Ingresa una mensaje"> <br> <br>
+    <input type="button" onclick="guardarMensaje()" value="Guardar mensaje">
+    <input type="button" onclick="mostrarMensaje()" value="Mostrar mensaje">
+    <p>Mensaje actual: <span id="cargarMensaje"></span></p>
+</div> <br><hr>
+
 
 
 

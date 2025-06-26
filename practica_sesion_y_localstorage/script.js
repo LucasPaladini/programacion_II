@@ -1,6 +1,3 @@
-let listaNombres = []
-
-
 
 function guardarNombre() {
     let nombre = document.getElementById("nombre").value;
@@ -45,8 +42,9 @@ function agregarTarea() {
         return
     }
 
+    localStorage.setItem("tareaNueva", tareaNueva)
     let nuevaLista = document.createElement("li");
-    nuevaLista.innerText = tareaNueva;
+    nuevaLista.innerText = localStorage.getItem("tareaNueva");
 
     let lista = document.getElementById("listaTareas");
     lista.appendChild(nuevaLista);
@@ -62,10 +60,10 @@ function temporizador() {
         TiempoActual++;
         sessionStorage.setItem("tiempo", TiempoActual);
         TiempoParrafo.innerText = TiempoActual;
-        if (TiempoActual >= 15) {
+        if (TiempoActual >= 100) {
             clearInterval(tiempoTotal);
-            alert("Tiempo máximo de 15 segundos");
-            TiempoParrafo.innerText = "Tiempo maximo de 15 segundos";
+            // alert("Tiempo máximo de 100 segundos");
+            TiempoParrafo.innerText = "Tiempo maximo de 100 segundos";
             document.getElementById("tiempo").style.color = "red";
         }
     }, 1000);
@@ -73,15 +71,50 @@ function temporizador() {
 temporizador();
 
 
-function guardarNotas() {
-    nuevaNota = document.getElementById("nuevaNota").value;
+function guardarNota() {
+    let nuevaNota = document.getElementById("nuevaNota").value;
     localStorage.setItem("nuevaNota", nuevaNota);
-
-    let nuevaLista = document.createElement("li");
-    nuevaLista.innerText = nuevaNota;
-    let lista = document.getElementById("campoNotas");
-    lista.appendChild(nuevaLista);
 }
+
+function mostrarNota() {
+    let notaGuardada = localStorage.getItem("nuevaNota");
+    if (notaGuardada) {
+        let nuevaLista = document.createElement("li");
+        nuevaLista.innerText = notaGuardada;
+        let lista = document.getElementById("campoNotas");
+        lista.appendChild(nuevaLista);
+    }
+    else
+        alert("Ingresa una nota señor")
+}
+
+
+function verificarCheckbox() {
+    let checkbox = document.getElementById("casillaCheckbox");
+    let estadoCheckbox = checkbox.checked;
+    localStorage.setItem("checkbox", estadoCheckbox);
+}
+
+function cargarCheckbox() {
+    let estadoLocal = localStorage.getItem("checkbox");
+    document.getElementById("casillaCheckbox").checked = (estadoLocal === "true");
+}
+cargarCheckbox()
+
+
+function guardarMensaje() {
+    let mensaje = document.getElementById("mensaje").value;
+    localStorage.setItem("mensaje", mensaje)
+}
+
+function mostrarMensaje() {
+    let mensaje = localStorage.getItem("mensaje")
+    document.getElementById("cargarMensaje").innerText = mensaje;
+    alert(mensaje);
+}
+mostrarMensaje()
+
+
 
 
 
