@@ -8,15 +8,56 @@
 </head>
 <body>
 
+<form action="#">
+
+    <h1>Bienvenido</h1>
+    <p id="contadorTexto"></p>
+
+    <label for="nombre">Nombre:  </label>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre"> <br> <br>
+
+    <label id="guardarNombre">Clic para guardar nombre: </label>
+    <input type="button" onclick="guardarNombre()" value="Guardar nombre"> <br> <br>
+
+    <label id="datos"> Clic para ver tu nombre:  </label>
+    <input type="button" onclick="mostrarNombre()" value="Mostrar nombre"> <br> <br> <hr>
+
+    <label for="color">Elige un color de fondo: </label>
+    <input type="color" id="color" onchange="guardarColor()" placeholder="Ingresa un color"> <br> <br> <hr>
+
+</form>
+
+
+<h2> Lista de tareas </h2>
+
+<form action="">
+    <label> Ingresa una tarea: </label>
+    <input type="text" id="tareaNueva" placeholder="Ingresa una tarea"> <br> <br>
+    <input type="button" onclick=agregarTarea() placeholder="Ingresa una tarea" value="Agregar tarea">
+</form>
+
+<ul id="listaTareas">
+    <li>
+        Primer tarea
+    </li>
+</ul> <hr>
+
+
+<h2>Temporizador</h2>
+<p id="tiempo"></p> <hr>
+
+
+<h2> Notas: </h2>
 <div>
-    <button onclick="ingresarUsuarios();">Ingresar usuarios</button>
-    <br><br>
-    <button onclick="mostrarStorage();">Mostrar usuarios</button>
+    <label for=nombre>Ingresa notas: </label>
+    <input type="text" id="nuevaNota" placeholder="Ingresa una nota "> <br> <br>
+    <input type="button" onclick="guardarNotas()" value="Guardar notas">
+    <p id="campoNotas"></p>
 </div>
 
-<div id="contenedorNombres">
-    <p>Inicio</p>
-</div>
+
+
+
 
 <script src="script.js" ></script>
 </body>
