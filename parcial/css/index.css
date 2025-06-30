@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
 * {
-  font-family: “Raleway”, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 .container {
   width: ??;
-  padding: ??;
+  padding: 10px;
 }
 
 /* MENU: NAVBAR/HEADER */
@@ -79,23 +80,23 @@ nav ul li a:hover {
   align-content: center;
   border-radius: 10em;
   box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
-  border: #74a0cc;
+  border: #74a0cc solid 1px;
 }
 
 /* SECTION SECCIONES */
 
-.article-section-secciones h2 {
+#article-secciones h2 {
   margin-top: 40px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 20px;
 }
 
-#article-products h2 {
-  margin-top: 0;
+#article-experiencia h2 {
+  margin-top: 40;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 20;
 }
 
 .article-section-secciones p {
@@ -115,7 +116,6 @@ nav ul li a:hover {
   padding-bottom: 40px;
 }
 
-
 /*EXPERIENCIA*/
 .list-wrapper-experiencia {
   width: 90%;
@@ -131,16 +131,16 @@ nav ul li a:hover {
   margin: 0;
   padding: 15px;
   border-radius: 2px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);;
 }
 
 .list-experiencia .list-item-experiencia {
   display: flex;
-  padding: 10px 5px;
+  padding: 0px 0px;
 }
 
 .list-experiencia .list-item-experiencia:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /*list item image wrapper*/
@@ -160,35 +160,41 @@ nav ul li a:hover {
 /*list item content*/
 .list-experiencia .list-item__content-experiencia {
   flex-grow: 1;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .list-experiencia .list-item__content-experiencia h1 {
-  margin-top: 15px;
+  margin-top: 15px ;
   font-size: 18px;
 }
 
 .listexperiencia .list-item__content-experiencia p {
-  margin-top: 5px;
-  margin-bottom: 0;
-  color: #AAA
+  margin-top: 5px ;
+  margin-bottom: 0px ;
+  color: #AAA;
 }
 
 /*CONOCIMIENTOS*/
+#article-secciones-conocimientos h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
 .contenedor-conocimientos {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .card-conocimientos {
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
-  box-shadow: 0px 0px 7px 0px lightgrey;;
-  border: none;
+  box-shadow: 0px 0px 7px 0px lightgrey;
+  border: 0;
   width: 200px;
-  background-color: white;
 }
 
 .cuerpo-conocimientos {
@@ -208,18 +214,29 @@ nav ul li a:hover {
 }
 
 .pie-conocimientos {
-  background:#74A0CC;
-  display: flex ;
+  background: #74A0CC;
+  display: flex;
   color: white;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height:30px;
 }
 
+
+
 /*RECONOCIMIENTOS*/
+
+#article-secciones-recomendaciones {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .nav-datos {
+  width: 80%;
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 1fr 6fr;
+  margin: 0 auto;
 }
 
 .datos {
@@ -275,10 +292,10 @@ nav ul li a:hover {
 /* FOOTER CONTACT */
 
 #footer-contact {
-  background-color: ??;
-  color: #??;
-  display: ;
-  justify-content: ;
+  background-color: #566573;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
 }
 
 #footer-contact .contact-data {
