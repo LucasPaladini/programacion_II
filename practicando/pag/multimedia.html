@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+<p>Soy multimedia</p>
+
+
+<table>
+  <caption>Hola soy una tabla</caption>
+
+  <tr>
+    <th rowspan="2">Cliente </th>
+    <th >Nombre </th>
+    <th> Email</th>
+    <th> Apellido </th>
+    <th rowspan="2">Completa todo</th>
+
+  </tr>
+
+  <tr>
+    <td colspan="1">Luquitas</td>
+    <td> Luquitas@gmail.com </td>
+    <td> Pala </td>
+  </tr>
+
+</table><br>
+
+
+<a href="https://github.com/LucasPaladini" target="_blank">Mi github</a> <br> <hr>
+<a class="a-personalizado" href="contact.html" target="_blank" title="Clic para ir a mi contacto">Mi contacto</a> <br>
+<hr>
+
+<form action="#">
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+
+  <label for="apellido">Apellido</label>
+  <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+
+  <label for="contraseña">Contraseña</label>
+  <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+
+  <label for="fecha">Fecha</label>
+  <input type="date" id="fecha" name="fecha" required>
+
+  <label for="cuadro">Cuadro</label>
+  <input type="text" id="cuadro" name="cuadro" value="Boca" readonly>
+
+  <label for="check">Femenino</label>
+  <input type="checkbox" id="check" name="check">
+  <hr>
+
+  <label for="radio">Selecciona</label>
+  <input type="radio" id="radio1" name="radio"> F
+  <input type="radio" id="radio2" name="radio"> M
+  <input type="radio" id="radio3" name="radio"> otro
+
+  <button id="botonIngreso" onclick="mostrarIngreso()">Mostrar datos ingresados</button>
+  <p id="ingresarNombre">Muestra tu nombre</p> <br> <br>
+
+
+</form> <br>
+
+
+
+<fieldset>
+  <legend>Selecciona</legend>
+  <label>Selecciona tu auto preferido entre estos</label>
+  <select id="select" name="select">
+    <option value="Vento">Vento</option>
+    <option value="AudiRS3">Audi RS3</option>
+  </select> <br> <br>
+
+</fieldset>
+
+
+<img src="../img/mercho.jpg" width="200">
+
+
+
+
+
+<script src="../script.js"></script>
+</body>
+</html>

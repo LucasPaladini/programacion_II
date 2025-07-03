@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  width: ??;
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
 }
 
 /* MENU: NAVBAR/HEADER */
@@ -291,15 +291,15 @@ nav ul li a:hover {
 
 /* FOOTER CONTACT */
 
-#footer-contact {
+#footer-contacto {
   background-color: #566573;
   color: #eeeeee;
   display: flex;
   justify-content: center;
 }
 
-#footer-contact .contact-data {
-  display: ;
+#footer-contacto .contact-data {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -332,11 +332,15 @@ nav ul li a:hover {
 }
 
 .contact-form form .form-control input {
-  ??
+  border-radius: 3px;
+  border: 0.3px solid #34495E;
+  width: 250px;
 }
 
 .contact-form form .form-control textarea {
-  ??
+  border-radius: 3px;
+  border: 0.3px solid #34495E;
+  width: 250px;
 }
 
 .contact-form form .form-control label {
