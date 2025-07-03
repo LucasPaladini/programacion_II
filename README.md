@@ -6,7 +6,7 @@
 ~ Código escrito bajo los efectos de café y mucha desesperación. ☕️😵‍💫
 
 ```
-    ____  
+     ____  
    /      \  
   |  (o) (o)  
   C     _)  
